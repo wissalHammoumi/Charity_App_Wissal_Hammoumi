@@ -2,17 +2,22 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="OrganisationMS" />
         <module name="userMS" />
+        <module name="DiscoveryService" />
+        <module name="OrganisationMS" />
+        <module name="GateWay" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="DiscoveryService" options="-parameters" />
+      <module name="GateWay" options="-parameters" />
       <module name="OrganisationMS" options="-parameters" />
       <module name="userMS" options="-parameters" />
     </option>
