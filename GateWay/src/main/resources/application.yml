@@ -1,12 +1,20 @@
+#
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: r1
+#          uri: lb://USERMS
+#          predicates:
+#            - Path= /users/**
+#        - id: r2
+#          uri: lb://ORGANISATIONMS
+#          predicates:
+#            - Path= /organistions/**
+
 spring:
   cloud:
     gateway:
-      routes:
-        - id: r1
-          uri: lb://USERMS
-          predicates:
-            - Path= /users/**
-        - id: r2
-          uri: lb://ORGANISATIONMS
-          predicates:
-            - Path= /organistions/**
+      discovery:
+        locator:
+          enabled: true
