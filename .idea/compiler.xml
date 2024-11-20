@@ -8,15 +8,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DonationMS" />
-        <module name="PaiementMS" />
-        <module name="GateWay" />
         <module name="userMS" />
+        <module name="PaiementMS" />
         <module name="DiscoveryService" />
         <module name="OrganisationMS" />
+        <module name="GateWay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-server" target="17" />
+      <module name="configServer" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +28,7 @@
       <module name="OrganisationMS" options="-parameters" />
       <module name="PaiementMS" options="-parameters" />
       <module name="config-server" options="-parameters" />
+      <module name="configServer" options="-parameters" />
       <module name="userMS" options="-parameters" />
     </option>
   </component>
