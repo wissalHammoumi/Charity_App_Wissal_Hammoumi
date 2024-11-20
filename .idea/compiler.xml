@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DonationMS" />
-        <module name="config-server" />
         <module name="PaiementMS" />
         <module name="GateWay" />
         <module name="userMS" />
@@ -16,6 +15,9 @@
         <module name="OrganisationMS" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
